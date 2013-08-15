@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		0708F59E17BCF6770018C0F7 /* APPromiseLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708F59D17BCF6770018C0F7 /* APPromiseLeakTests.m */; };
 		0708F59F17BCF6770018C0F7 /* APPromiseLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708F59D17BCF6770018C0F7 /* APPromiseLeakTests.m */; };
+		0708F5EB17BD2A940018C0F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0708F5A817BD25930018C0F7 /* Cocoa.framework */; };
+		0708F5F817BD2A940018C0F7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D852D217B7DFA500006391 /* SenTestingKit.framework */; };
+		0708F5F917BD2A940018C0F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0708F5A817BD25930018C0F7 /* Cocoa.framework */; };
+		0708F5FC17BD2A940018C0F7 /* libAPPromise-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0708F5EA17BD2A940018C0F7 /* libAPPromise-mac.a */; };
+		0708F60217BD2A950018C0F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0708F60017BD2A950018C0F7 /* InfoPlist.strings */; };
+		0708F60517BD2A950018C0F7 /* APPromise_macTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708F60417BD2A950018C0F7 /* APPromise_macTests.m */; };
+		0797863E17BD2B1900DFC611 /* APPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D852EC17B7E07300006391 /* APPromise.m */; };
+		0797863F17BD2B3100DFC611 /* APPromiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D852E117B7DFA500006391 /* APPromiseTests.m */; };
+		0797864017BD2B3100DFC611 /* APPromiseLeakTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0708F59D17BCF6770018C0F7 /* APPromiseLeakTests.m */; };
 		07C9CAF217B7EED500B39E15 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D852D217B7DFA500006391 /* SenTestingKit.framework */; };
 		07C9CAF317B7EED500B39E15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D852D417B7DFA500006391 /* UIKit.framework */; };
 		07C9CAF417B7EED500B39E15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D852C317B7DFA500006391 /* Foundation.framework */; };
@@ -27,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0708F5FA17BD2A940018C0F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07D852B817B7DFA500006391 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0708F5E917BD2A940018C0F7;
+			remoteInfo = "APPromise-mac";
+		};
 		07C9CB0417B7F04800B39E15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 07D852B817B7DFA500006391 /* Project object */;
@@ -59,6 +75,21 @@
 		0708F59C17BCF6760018C0F7 /* APPromiseLeakTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPromiseLeakTests.h; sourceTree = "<group>"; };
 		0708F59D17BCF6770018C0F7 /* APPromiseLeakTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPromiseLeakTests.m; sourceTree = "<group>"; };
 		0708F5A017BCF86A0018C0F7 /* APPromiseTestsDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPromiseTestsDef.h; sourceTree = "<group>"; };
+		0708F5A817BD25930018C0F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		0708F5AB17BD25930018C0F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0708F5AC17BD25930018C0F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0708F5AD17BD25930018C0F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0708F5D717BD27210018C0F7 /* APPromise-macTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APPromise-macTests-Info.plist"; sourceTree = "<group>"; };
+		0708F5D917BD27210018C0F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0708F5DB17BD27210018C0F7 /* APPromise_macTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPromise_macTests.h; sourceTree = "<group>"; };
+		0708F5DC17BD27210018C0F7 /* APPromise_macTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPromise_macTests.m; sourceTree = "<group>"; };
+		0708F5EA17BD2A940018C0F7 /* libAPPromise-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libAPPromise-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0708F5EE17BD2A940018C0F7 /* APPromise-mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APPromise-mac-Prefix.pch"; sourceTree = "<group>"; };
+		0708F5F717BD2A940018C0F7 /* APPromise-macTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APPromise-macTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0708F5FF17BD2A950018C0F7 /* APPromise-macTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APPromise-macTests-Info.plist"; sourceTree = "<group>"; };
+		0708F60117BD2A950018C0F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0708F60317BD2A950018C0F7 /* APPromise_macTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APPromise_macTests.h; sourceTree = "<group>"; };
+		0708F60417BD2A950018C0F7 /* APPromise_macTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APPromise_macTests.m; sourceTree = "<group>"; };
 		07C9CAF117B7EED500B39E15 /* APPromiseTests-ios6.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APPromiseTests-ios6.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C9CAF717B7EED500B39E15 /* APPromiseTests-ios6-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APPromiseTests-ios6-Info.plist"; sourceTree = "<group>"; };
 		07C9CAF917B7EED500B39E15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -81,6 +112,24 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0708F5E717BD2A940018C0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0708F5EB17BD2A940018C0F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0708F5F317BD2A940018C0F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0708F5F817BD2A940018C0F7 /* SenTestingKit.framework in Frameworks */,
+				0708F5F917BD2A940018C0F7 /* Cocoa.framework in Frameworks */,
+				0708F5FC17BD2A940018C0F7 /* libAPPromise-mac.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07C9CAED17B7EED500B39E15 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +163,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0708F5AA17BD25930018C0F7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0708F5AB17BD25930018C0F7 /* AppKit.framework */,
+				0708F5AC17BD25930018C0F7 /* CoreData.framework */,
+				0708F5AD17BD25930018C0F7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0708F5D517BD27210018C0F7 /* APPromise-macTests */ = {
+			isa = PBXGroup;
+			children = (
+				0708F5DB17BD27210018C0F7 /* APPromise_macTests.h */,
+				0708F5DC17BD27210018C0F7 /* APPromise_macTests.m */,
+				0708F5D617BD27210018C0F7 /* Supporting Files */,
+			);
+			path = "APPromise-macTests";
+			sourceTree = "<group>";
+		};
+		0708F5D617BD27210018C0F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0708F5D717BD27210018C0F7 /* APPromise-macTests-Info.plist */,
+				0708F5D817BD27210018C0F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0708F5EC17BD2A940018C0F7 /* APPromise-mac */ = {
+			isa = PBXGroup;
+			children = (
+				0708F5ED17BD2A940018C0F7 /* Supporting Files */,
+			);
+			path = "APPromise-mac";
+			sourceTree = "<group>";
+		};
+		0708F5ED17BD2A940018C0F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0708F5EE17BD2A940018C0F7 /* APPromise-mac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0708F5FD17BD2A940018C0F7 /* APPromise-macTests */ = {
+			isa = PBXGroup;
+			children = (
+				0708F60317BD2A950018C0F7 /* APPromise_macTests.h */,
+				0708F60417BD2A950018C0F7 /* APPromise_macTests.m */,
+				0708F5FE17BD2A950018C0F7 /* Supporting Files */,
+			);
+			path = "APPromise-macTests";
+			sourceTree = "<group>";
+		};
+		0708F5FE17BD2A950018C0F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0708F5FF17BD2A950018C0F7 /* APPromise-macTests-Info.plist */,
+				0708F60017BD2A950018C0F7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		07C9CAF517B7EED500B39E15 /* APPromiseTests-ios6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +253,9 @@
 				07D852C517B7DFA500006391 /* APPromise */,
 				07D852DA17B7DFA500006391 /* APPromiseTests */,
 				07C9CAF517B7EED500B39E15 /* APPromiseTests-ios6 */,
+				0708F5D517BD27210018C0F7 /* APPromise-macTests */,
+				0708F5EC17BD2A940018C0F7 /* APPromise-mac */,
+				0708F5FD17BD2A940018C0F7 /* APPromise-macTests */,
 				07D852C217B7DFA500006391 /* Frameworks */,
 				07D852C117B7DFA500006391 /* Products */,
 			);
@@ -151,6 +267,8 @@
 				07D852C017B7DFA500006391 /* libAPPromise.a */,
 				07D852D117B7DFA500006391 /* APPromiseTests.octest */,
 				07C9CAF117B7EED500B39E15 /* APPromiseTests-ios6.octest */,
+				0708F5EA17BD2A940018C0F7 /* libAPPromise-mac.a */,
+				0708F5F717BD2A940018C0F7 /* APPromise-macTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +279,8 @@
 				07D852C317B7DFA500006391 /* Foundation.framework */,
 				07D852D217B7DFA500006391 /* SenTestingKit.framework */,
 				07D852D417B7DFA500006391 /* UIKit.framework */,
+				0708F5A817BD25930018C0F7 /* Cocoa.framework */,
+				0708F5AA17BD25930018C0F7 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,12 +307,12 @@
 		07D852DA17B7DFA500006391 /* APPromiseTests */ = {
 			isa = PBXGroup;
 			children = (
+				0708F5A017BCF86A0018C0F7 /* APPromiseTestsDef.h */,
 				07D852E017B7DFA500006391 /* APPromiseTests.h */,
 				07D852E117B7DFA500006391 /* APPromiseTests.m */,
-				07D852DB17B7DFA500006391 /* Supporting Files */,
 				0708F59C17BCF6760018C0F7 /* APPromiseLeakTests.h */,
 				0708F59D17BCF6770018C0F7 /* APPromiseLeakTests.m */,
-				0708F5A017BCF86A0018C0F7 /* APPromiseTestsDef.h */,
+				07D852DB17B7DFA500006391 /* Supporting Files */,
 			);
 			path = APPromiseTests;
 			sourceTree = "<group>";
@@ -208,7 +328,53 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		0708F5E817BD2A940018C0F7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		0708F5E917BD2A940018C0F7 /* APPromise-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0708F60617BD2A950018C0F7 /* Build configuration list for PBXNativeTarget "APPromise-mac" */;
+			buildPhases = (
+				0708F5E617BD2A940018C0F7 /* Sources */,
+				0708F5E717BD2A940018C0F7 /* Frameworks */,
+				0708F5E817BD2A940018C0F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "APPromise-mac";
+			productName = "APPromise-mac";
+			productReference = 0708F5EA17BD2A940018C0F7 /* libAPPromise-mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0708F5F617BD2A940018C0F7 /* APPromise-macTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0708F60917BD2A950018C0F7 /* Build configuration list for PBXNativeTarget "APPromise-macTests" */;
+			buildPhases = (
+				0708F5F217BD2A940018C0F7 /* Sources */,
+				0708F5F317BD2A940018C0F7 /* Frameworks */,
+				0708F5F417BD2A940018C0F7 /* Resources */,
+				0708F5F517BD2A940018C0F7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0708F5FB17BD2A940018C0F7 /* PBXTargetDependency */,
+			);
+			name = "APPromise-macTests";
+			productName = "APPromise-macTests";
+			productReference = 0708F5F717BD2A940018C0F7 /* APPromise-macTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		07C9CAF017B7EED500B39E15 /* APPromiseTests-ios6 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C9CB0117B7EED500B39E15 /* Build configuration list for PBXNativeTarget "APPromiseTests-ios6" */;
@@ -288,11 +454,21 @@
 				07D852BF17B7DFA500006391 /* APPromise */,
 				07D852D017B7DFA500006391 /* APPromiseTests */,
 				07C9CAF017B7EED500B39E15 /* APPromiseTests-ios6 */,
+				0708F5E917BD2A940018C0F7 /* APPromise-mac */,
+				0708F5F617BD2A940018C0F7 /* APPromise-macTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0708F5F417BD2A940018C0F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0708F60217BD2A950018C0F7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07C9CAEE17B7EED500B39E15 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +488,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0708F5F517BD2A940018C0F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
 		07C9CAEF17B7EED500B39E15 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -341,6 +530,24 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0708F5E617BD2A940018C0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0797863E17BD2B1900DFC611 /* APPromise.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0708F5F217BD2A940018C0F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0797863F17BD2B3100DFC611 /* APPromiseTests.m in Sources */,
+				0797864017BD2B3100DFC611 /* APPromiseLeakTests.m in Sources */,
+				0708F60517BD2A950018C0F7 /* APPromise_macTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07C9CAEC17B7EED500B39E15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +578,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0708F5FB17BD2A940018C0F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0708F5E917BD2A940018C0F7 /* APPromise-mac */;
+			targetProxy = 0708F5FA17BD2A940018C0F7 /* PBXContainerItemProxy */;
+		};
 		07C9CB0517B7F04800B39E15 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 07D852BF17B7DFA500006391 /* APPromise */;
@@ -384,6 +596,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0708F5D817BD27210018C0F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0708F5D917BD27210018C0F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0708F60017BD2A950018C0F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0708F60117BD2A950018C0F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		07C9CAF817B7EED500B39E15 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -403,6 +631,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0708F60717BD2A950018C0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APPromise-mac/APPromise-mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0708F60817BD2A950018C0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APPromise-mac/APPromise-mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0708F60A17BD2A950018C0F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APPromise-mac/APPromise-mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "APPromise-macTests/APPromise-macTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0708F60B17BD2A950018C0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APPromise-mac/APPromise-mac-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "APPromise-macTests/APPromise-macTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		07C9CAFF17B7EED500B39E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -545,6 +847,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0708F60617BD2A950018C0F7 /* Build configuration list for PBXNativeTarget "APPromise-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0708F60717BD2A950018C0F7 /* Debug */,
+				0708F60817BD2A950018C0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0708F60917BD2A950018C0F7 /* Build configuration list for PBXNativeTarget "APPromise-macTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0708F60A17BD2A950018C0F7 /* Debug */,
+				0708F60B17BD2A950018C0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		07C9CB0117B7EED500B39E15 /* Build configuration list for PBXNativeTarget "APPromiseTests-ios6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'APPromiseTests-ios6' target in the 'APPromiseTests-ios6' project
+//
+
+#ifdef __OBJC__
+   #import <UIKit/UIKit.h>
+   #import <Foundation/Foundation.h>
+#endif

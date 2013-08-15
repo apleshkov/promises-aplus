@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'APPromise' target in the 'APPromise' project
+//
+
+#ifdef __OBJC__
+   #import <Foundation/Foundation.h>
+#endif

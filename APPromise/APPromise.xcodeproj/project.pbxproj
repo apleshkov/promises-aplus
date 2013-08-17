@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 0797864717BE79B300DFC611 /* Build configuration list for PBXAggregateTarget "Documentation" */;
 			buildPhases = (
-				0797864A17BE7A4400DFC611 /* ShellScript */,
+				0797864A17BE7A4400DFC611 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -532,18 +532,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		0797864A17BE7A4400DFC611 /* ShellScript */ = {
+		0797864A17BE7A4400DFC611 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "appledoc \\\n    --project-name \"${PROJECT_NAME}\" \\\n    --project-company \"Promises/A+\" \\\n    --company-id \"promises.aplus\" \\\n    --output \"${PROJECT_DIR}/../Documentation\" \\\n    --keep-intermediate-files \\\n    --no-repeat-first-par \\\n    --explicit-crossref \\\n    --crossref-format \"[\\+-]%@\" \\\n    --ignore \"*.m\" \\\n    --index-desc \"${PROJECT_DIR}/../README.md\" \\\n    --clean-output \\\n    --logformat xcode \\\n    --exit-threshold 2 \\\n    \"${PROJECT_DIR}/APPromise\"\n\nrm -rf ${PROJECT_DIR}/../Documentation/docset*";
+			shellScript = "appledoc \\\n    --project-name \"${PROJECT_NAME}\" \\\n    --project-company \"Promises/A+\" \\\n    --company-id \"promises.aplus\" \\\n    --output \"${PROJECT_DIR}/../Documentation\" \\\n    --keep-intermediate-files \\\n    --no-repeat-first-par \\\n    --explicit-crossref \\\n    --crossref-format \"[\\+-]%@\" \\\n    --ignore \"*.m\" \\\n    --index-desc \"${PROJECT_DIR}/../README.md\" \\\n    --clean-output \\\n    --logformat xcode \\\n    --exit-threshold 2 \\\n    \"${PROJECT_DIR}/APPromise\"";
 		};
 		07C9CAEF17B7EED500B39E15 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

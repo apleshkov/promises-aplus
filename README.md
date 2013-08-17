@@ -6,6 +6,6 @@ Please, read [this](http://promises-aplus.github.io/promises-spec/) for more inf
 Features:
 
 *   Thread-safe
-*   Documented
+*   [Documented](http://apleshkov.github.io/promises-aplus/)
 *   Supported platforms: iOS 5+, Mac OS 10.7+
 

@@ -543,7 +543,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "appledoc \\\n    --project-name \"${PROJECT_NAME}\" \\\n    --project-company \"Promises/A+\" \\\n    --company-id \"promises.aplus\" \\\n    --output \"${PROJECT_DIR}/../Documentation\" \\\n    --keep-intermediate-files \\\n    --no-repeat-first-par \\\n    --explicit-crossref \\\n    --crossref-format \"[\\+-]%@\" \\\n    --ignore \"*.m\" \\\n    --index-desc \"${PROJECT_DIR}/../README.md\" \\\n    --clean-output \\\n    --logformat xcode \\\n    --exit-threshold 2 \\\n    \"${PROJECT_DIR}/APPromise\"\n";
+			shellScript = "appledoc \\\n    --project-name \"${PROJECT_NAME}\" \\\n    --project-company \"Promises/A+\" \\\n    --company-id \"promises.aplus\" \\\n    --output \"${PROJECT_DIR}/../Documentation\" \\\n    --keep-intermediate-files \\\n    --no-repeat-first-par \\\n    --explicit-crossref \\\n    --crossref-format \"[\\+-]%@\" \\\n    --ignore \"*.m\" \\\n    --index-desc \"${PROJECT_DIR}/../README.md\" \\\n    --clean-output \\\n    --logformat xcode \\\n    --exit-threshold 2 \\\n    \"${PROJECT_DIR}/APPromise\"\n\nrm -rf ${PROJECT_DIR}/../Documentation/docset*";
 		};
 		07C9CAEF17B7EED500B39E15 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -71,15 +71,15 @@ static char *const _kDefaultCommonQueueLabel = "promises.aplus.commonQueue";
 }
 
 - (id<APPromise>)thenUseDispatchQueue:(dispatch_queue_t)queue
-                          ifFulfilled:(APPromiseFulfillBlock)fulfill
-                             rejected:(APPromiseRejectBlock)reject {
+                          ifFulfilled:(APPromiseFulfillBlock)fulfilled
+                             rejected:(APPromiseRejectBlock)rejected {
    APPromise *promise = [APPromise promise];
    
    dispatch_async(_commonQueue, ^{
       APPromiseHandler *handler = [[APPromiseHandler alloc] initWithPromise:promise
                                                               dispatchQueue:(queue == NULL ? dispatch_get_main_queue() : queue)
-                                                                    fulfull:fulfill
-                                                                     reject:reject];
+                                                                    fulfull:fulfilled
+                                                                     reject:rejected];
       
       if (_state == APPromiseStateFulfilled) {
          [handler fulfillWithValue:_value];

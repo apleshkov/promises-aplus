@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/apleshkov/Library/Developer/Shared/Documentation/DocSets/promises.aplus.APPromise.docset
+Time: 2013-08-17 16:42:53 +0000

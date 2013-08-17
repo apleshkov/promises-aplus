@@ -10,14 +10,32 @@
 
 @interface APPromise (APPromiseMutator)
 
+/**
+ Fulfills promise with a value.
+ @param value Fulfillment value.
+ */
 - (void)fulfillWithValue:(id)value;
+
+/**
+ Rejects promise with a reason.
+ @param reason Rejection reason.
+ */
 - (void)rejectWithReason:(id)reason;
 
 @end
 
 @interface APPromise (APPromiseCreationShortcuts)
 
+/**
+ Creates an already fulfilled promise.
+ @param value Fulfillment value
+ */
 + (instancetype)promiseFulfilledWithValue:(id)value;
+
+/**
+ Creates an already rejected promise.
+ @param reason Rejection reason.
+ */
 + (instancetype)promiseRejectedWithReason:(id)reason;
 
 @end
